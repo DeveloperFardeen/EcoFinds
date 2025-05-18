@@ -2,21 +2,35 @@ ecofinds/
 │
 ├── app/
 │   ├── __init__.py        # Flask application initialization
+│   ├── forms.py           # Form definitions
+│   ├── utils.py           # Utility functions
 │   ├── models/            # Database models
-│   │   └── __init__.py
+│   │   ├── __init__.py
+│   │   ├── cart.py
+│   │   ├── category.py
+│   │   ├── db_utils.py
+│   │   ├── product.py
+│   │   ├── purchase.py
+│   │   └── user.py
 │   ├── routes/            # Application routes
+│   │   ├── __init__.py
 │   │   ├── auth.py
 │   │   ├── cart.py
 │   │   ├── main.py
 │   │   ├── products.py
-│   │   ├── user.py
-│   │   └── __init__.py
+│   │   └── user.py
 │   ├── static/            # Static files (CSS, JS, images)
 │   │   ├── css/
 │   │   ├── js/
 │   │   └── images/
 │   └── templates/         # HTML templates
-│       └── layout.html    # Base template
+│       ├── layout.html    # Base template
+│       ├── home.html
+│       ├── about.html
+│       ├── login.html
+│       ├── register.html
+│       ├── reset_request.html
+│       └── reset_token.html
 │
 ├── tests/
 │   └── test_routes.py
