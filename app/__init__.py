@@ -10,7 +10,7 @@ import os
 db = SQLAlchemy()
 bcrypt = Bcrypt()
 login_manager = LoginManager()
-login_manager.login_view = 'auth.login'
+setattr(login_manager, 'login_view', 'auth.login')
 login_manager.login_message_category = 'info'
 migrate = Migrate()
 
@@ -24,6 +24,12 @@ def create_app(config_class=Config):
     bcrypt.init_app(app)
     login_manager.init_app(app)
     migrate.init_app(app, db)
+
+    from app.models.user import User
+
+    @login_manager.user_loader
+    def load_user(user_id):
+        return User.query.get(int(user_id))
 
     # Ensure the upload directory exists
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
