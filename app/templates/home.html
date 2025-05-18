@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero text-center">
+    <div class="container">
+        <h1>Discover Sustainable Second-Hand Treasures</h1>
+        <p class="lead">Find unique items while contributing to a greener planet</p>
+        <div class="d-flex justify-content-center mt-4">
+            <a href="#" class="btn btn-primary btn-lg me-3">Browse Items</a>
+            <a href="#" class="btn btn-outline-primary btn-lg">Sell Item</a>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <h2 class="text-center mb-4">Featured Categories</h2>
+    <div class="text-center mb-4">
+        <div class="category-pill active">All</div>
+        <div class="category-pill">Clothing</div>
+        <div class="category-pill">Electronics</div>
+        <div class="category-pill">Furniture</div>
+        <div class="category-pill">Books</div>
+        <div class="category-pill">Home & Garden</div>
+    </div>
+
+    <div class="row">
+        <!-- Placeholder products will be replaced with real data in future steps -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card h-100">
+                <div class="bg-light d-flex justify-content-center align-items-center" style="height: 200px;">
+                    <i class="fas fa-image fa-4x text-secondary"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Vintage Leather Jacket</h5>
+                    <p class="price">$45.00</p>
+                    <p class="card-text">Gently used vintage leather jacket, perfect for fall weather.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card product-card h-100">
+                <div class="bg-light d-flex justify-content-center align-items-center" style="height: 200px;">
+                    <i class="fas fa-image fa-4x text-secondary"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Mid-Century Coffee Table</h5>
+                    <p class="price">$120.00</p>
+                    <p class="card-text">Beautiful wooden coffee table in excellent condition.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card product-card h-100">
+                <div class="bg-light d-flex justify-content-center align-items-center" style="height: 200px;">
+                    <i class="fas fa-image fa-4x text-secondary"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Refurbished Tablet</h5>
+                    <p class="price">$89.99</p>
+                    <p class="card-text">Fully functional 10" tablet, factory reset and ready to use.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center mt-4">
+        <a href="#" class="btn btn-primary">View All Listings</a>
+    </div>
+</section>
+
+<section class="bg-light py-5 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>Why Choose EcoFinds?</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Support sustainable consumption</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Find unique, quality items</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Save money on pre-loved goods</li>
+                    <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Connect with eco-conscious community</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <div style="background-color: var(--primary-light); border-radius: 50%; width: 300px; height: 300px; display: inline-flex; justify-content: center; align-items: center;">
+                    <i class="fas fa-recycle fa-8x" style="color: var(--primary-dark);"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

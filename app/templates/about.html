@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h1 class="text-center mb-4">About EcoFinds</h1>
+            
+            <div class="card mb-5">
+                <div class="card-body">
+                    <h3 class="card-title text-center" style="color: var(--primary-dark);">Our Mission</h3>
+                    <p class="card-text">
+                        At EcoFinds, we're dedicated to creating a sustainable marketplace that connects 
+                        eco-conscious buyers and sellers. Our mission is to extend the lifecycle of 
+                        quality products, reduce waste, and promote a circular economy. By choosing 
+                        second-hand items, we collectively reduce the environmental impact of 
+                        manufacturing and disposal processes.
+                    </p>
+                </div>
+            </div>
+            
+            <h3 class="mb-3" style="color: var(--primary-dark);">How EcoFinds Works</h3>
+            <div class="row mb-5">
+                <div class="col-md-4 text-center mb-3">
+                    <div class="bg-light rounded-circle mx-auto d-flex justify-content-center align-items-center" style="width: 100px; height: 100px;">
+                        <i class="fas fa-camera fa-3x" style="color: var(--primary);"></i>
+                    </div>
+                    <h5 class="mt-3">List Items</h5>
+                    <p>Photograph and list your unused items in minutes</p>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <div class="bg-light rounded-circle mx-auto d-flex justify-content-center align-items-center" style="width: 100px; height: 100px;">
+                        <i class="fas fa-search fa-3x" style="color: var(--primary);"></i>
+                    </div>
+                    <h5 class="mt-3">Discover</h5>
+                    <p>Browse through unique items from sellers near you</p>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <div class="bg-light rounded-circle mx-auto d-flex justify-content-center align-items-center" style="width: 100px; height: 100px;">
+                        <i class="fas fa-exchange-alt fa-3x" style="color: var(--primary);"></i>
+                    </div>
+                    <h5 class="mt-3">Exchange</h5>
+                    <p>Make purchases and arrange safe exchanges</p>
+                </div>
+            </div>
+            
+            <h3 class="mb-3" style="color: var(--primary-dark);">Environmental Impact</h3>
+            <p>
+                Every item purchased second-hand represents:
+            </p>
+            <ul class="mb-5">
+                <li>Reduced demand for new manufacturing</li>
+                <li>Less waste in landfills</li>
+                <li>Lower carbon emissions</li>
+                <li>Conservation of raw materials</li>
+                <li>Extended product lifecycles</li>
+            </ul>
+            
+            <div class="bg-light p-4 rounded">
+                <h3 class="mb-3" style="color: var(--primary-dark);">Join Our Community</h3>
+                <p>
+                    Whether you're looking to declutter your home, find unique treasures, or simply reduce your 
+                    environmental footprint, EcoFinds provides a platform where sustainable choices meet 
+                    practical needs. Join thousands of eco-conscious individuals making a difference, 
+                    one transaction at a time.
+                </p>
+                <div class="text-center">
+                    <a href="#" class="btn btn-primary">Sign Up Today</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

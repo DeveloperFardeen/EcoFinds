@@ -1,0 +1,138 @@
+/* EcoFinds Global Styles */
+
+:root {
+    --primary-dark: #5D8736;
+    --primary: #809D3C;
+    --primary-light: #A9C46C;
+    --accent: #F4FFC3;
+    --text-dark: #333;
+    --text-light: #f8f9fa;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: var(--primary-dark);
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--accent) !important;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.card {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card .card-title {
+    color: var(--primary-dark);
+    font-weight: bold;
+}
+
+.product-card .price {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.25rem rgba(169, 196, 108, 0.25);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-light);
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+.hero p {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+}
+
+/* Category Pills */
+.category-pill {
+    background-color: var(--accent);
+    color: var(--primary-dark);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.category-pill:hover, .category-pill.active {
+    background-color: var(--primary);
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* Flash messages */
+.alert-success {
+    background-color: var(--primary-light);
+    border-color: var(--primary);
+    color: var(--primary-dark);
+}

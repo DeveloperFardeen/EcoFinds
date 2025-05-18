@@ -1,0 +1,24 @@
+ecofinds/
+│
+├── app/
+│   ├── __init__.py        # Flask application initialization
+│   ├── models/            # Database models
+│   │   └── __init__.py
+│   ├── routes/            # Application routes
+│   │   └── __init__.py
+│   ├── static/            # Static files (CSS, JS, images)
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   └── templates/         # HTML templates
+│       └── layout.html    # Base template
+│
+├── tests/
+│   └── test_routes.py
+│
+├── .env
+├── .gitignore
+├── config.py              # Configuration settings
+├── requirements.txt       # Dependencies
+├── run.py                 # Application entry point
+└── README.md
