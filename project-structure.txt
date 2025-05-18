@@ -5,6 +5,11 @@ ecofinds/
 │   ├── models/            # Database models
 │   │   └── __init__.py
 │   ├── routes/            # Application routes
+│   │   ├── auth.py
+│   │   ├── cart.py
+│   │   ├── main.py
+│   │   ├── products.py
+│   │   ├── user.py
 │   │   └── __init__.py
 │   ├── static/            # Static files (CSS, JS, images)
 │   │   ├── css/

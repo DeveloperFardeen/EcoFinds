@@ -25,12 +25,6 @@ def create_app(config_class=Config):
     login_manager.init_app(app)
     migrate.init_app(app, db)
 
-    from app.models.user import User
-
-    @login_manager.user_loader
-    def load_user(user_id):
-        return User.query.get(int(user_id))
-
     # Ensure the upload directory exists
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
@@ -52,6 +46,19 @@ def create_app(config_class=Config):
 
     # Create database tables if they don't exist
     with app.app_context():
+        # Import models to ensure they are registered with SQLAlchemy
+        from app.models.category import Category
+        from app.models.user import User
+        from app.models.product import Product
+        from app.models.cart import CartItem
+        from app.models.purchase import Purchase
+        
+        # Create all database tables
         db.create_all()
+        
+        # Import and run setup utilities after tables are created
+        from app.models.db_utils import create_default_categories, create_upload_folders
+        create_default_categories()
+        create_upload_folders()
 
     return app
